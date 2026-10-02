@@ -1,17 +1,14 @@
 name: Publish BHA jobs feed
 
-# Runs the publish script every hour and whenever you click "Run workflow".
-# It regenerates jobs.json from Airtable and commits it only if something changed.
-
 on:
   schedule:
-    - cron: "0 * * * *"      # hourly, on the hour (UTC). GitHub may delay a few minutes.
-  workflow_dispatch: {}       # adds a manual "Run workflow" button in the Actions tab
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
 
 permissions:
-  contents: write             # lets the action commit the updated jobs.json
+  contents: write
 
-concurrency:                  # never run two publishes at once
+concurrency:
   group: publish-jobs
   cancel-in-progress: false
 
@@ -36,10 +33,10 @@ jobs:
         run: |
           git config user.name  "BHA jobs bot"
           git config user.email "actions@users.noreply.github.com"
-          if git diff --quiet -- jobs.json; then
+          git add jobs.json
+          if git diff --cached --quiet; then
             echo "No change to jobs.json — nothing to commit."
           else
-            git add jobs.json
             git commit -m "Update jobs feed ($(date -u '+%Y-%m-%d %H:%M UTC'))"
             git push
           fi
