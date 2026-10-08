@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-10-08T14:23:01+00:00",
-  "count": 12,
+  "generatedAt": "2026-10-08T20:27:17+00:00",
+  "count": 13,
   "jobs": [
+    {
+      "title": "Hotel Sales Manager",
+      "hotel": "Holiday Inn Bristol Filton",
+      "department": "Sales & Marketing",
+      "type": "Full-time",
+      "salary": "up to £45,000",
+      "description": "Ready to drive revenue, build relationships, and make a real impact?\nWe're looking for a proactive Hotel Sales Manager to lead business development across Holiday Inn Bristol Filton.\nJoining a successful commercial team with a strong track record of growth, you'll be responsible for winning new business, specifically in Meetings and Events, growing existing accounts, and delivering revenue targets.\nWorking closely with the Director of Sales and wider commercial team, you will execute sales plans, build strong local partnerships, and maximise new business opportunities across business groups, meetings, and events corporate markets. You'll also support local marketing and social media activity to raise the profile of the hotel within the Bristol market.\nWhat we're looking for:\n·Proven sales experience within hospitality or a similar service-led industry\n·A track record of achieving and exceeding sales targets\n·Excellent networking and relationship-building skills\n· A UK Driving License\n·A proactive, results-driven approach to winning new business\n\nIf you're commercially minded, energetic, and passionate about hospitality, we'd love to hear from you. Join us and help shape the success of this iconic Bristol Hotel.",
+      "applyUrl": "https://www.linkedin.com/jobs/view/4474317883/",
+      "closing": "2026-10-31",
+      "posted": "2026-10-08",
+      "status": "Open"
+    },
     {
       "title": "Housekeeping Team Member",
       "hotel": "Holiday Inn Bristol Filton",
